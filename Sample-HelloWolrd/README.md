@@ -1,8 +1,10 @@
-"# Docker-Kubernetes-App"  
+"Sample-HelloWorld"  
 
-- Sample-HelloWorld  
+- sh で hello world する  
+
+- 起動方法
   - 1. フォルダを移動する  
-  `cd {クローン先フォルダ配下のSample-HelloWorld}`  
+  `cd {this folder}`  
   - 2. Docker image の生成  
   `docker image build -t helloworld:latest .`  
   - 3. 実行  
