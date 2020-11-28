@@ -1,4 +1,4 @@
-"Sample-HttpResponse"  
+## Sample002-SimpleHttpResponse-golang  
 
 - 単純な Http request を受け付ける(Go)  
 
