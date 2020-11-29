@@ -1,4 +1,4 @@
-"# Docker-Kubernetes-App"  
+"# Docker-App"  
 
 - Sample-HelloWorld  
   - 1. フォルダを移動する  
