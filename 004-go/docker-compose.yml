@@ -1,0 +1,21 @@
+version: '3'
+services:
+  dbserver:
+    build: ./mysql
+    image: go_web-db:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: go_web
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+    - "3306:3306"
+    volumes:
+    - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+    - ./mysql/conf.d:/etc/mysql/conf.d
+    - ./log/mysql:/var/log/mysql
+
+volumes:
+  mysql-db:
+    driver: local
